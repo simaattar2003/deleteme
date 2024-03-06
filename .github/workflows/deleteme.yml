@@ -6,7 +6,8 @@ jobs:
     name: myJobName
     runs-on: ubuntu-latest
     steps:
-      - run: |
+      - name: some commands
+        run: |
           echo ${{ runner.os }}
           hostname
       - name: Checkout Repo
